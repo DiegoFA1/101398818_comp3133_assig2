@@ -1,0 +1,49 @@
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content{
+    width: 100%;
+    
+}
+
+table th{
+    text-align: left;
+}
+
+.select-btn {
+    background-color: #5c36f4;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.update-btn {
+    background-color: #115404;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-btn {
+    background-color: #DC143C;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,17 @@
+/* Styles for Angular Material Dialog */
+.mat-dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+  }
+  
+  .mat-dialog-actions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .mat-dialog-actions button {
+    margin-left: 10px;
+
+  }
