@@ -1,27 +1,32 @@
-# Assignment2
+# Assignment2 FrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+# Backend Deployed on Heroku
+[image](./screenshots/Heroku.png)
 
-## Development server
+# Login
+[image](./screenshots/Login.png)
+[image](./screenshots/LoginError.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Signup/Register
+[image](./screenshots/Register.png)
+[image](./screenshots/RegisterError.png)
 
-## Code scaffolding
+# Employee List, LogOut option on the NavBar
+[image](./screenshots/empList.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Add New Employee
+[image](./screenshots/empAdd.png)
+[image](./screenshots/empAddError.png)
 
-## Build
+# Update Employee
+[image](./screenshots/empUpdate.png)
+[image](./screenshots/empListAfterUpdate.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# View Details Employee
+[image](./screenshots/empDetails.png)
 
-## Running unit tests
+# Use of simple Authentication Service to know if user is logged in
+[image](./screenshots/Service.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Use of Pipe for Capitalization
+[image](./screenshots/Pipe.png)
