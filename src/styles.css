@@ -53,6 +53,7 @@ h1 {
 
 .userForm{
     padding: 20px 30px;
+    align-items: center;
 }
 
 .userForm div{
@@ -65,7 +66,6 @@ h1 {
 .userForm div input{
     height: 100%;
     width: 100%;
-    padding-left: 15px;
     outline: none;
     border-radius: 25px;
     border: 1px solid silver;
@@ -108,4 +108,31 @@ h1 {
     border-radius: 25px;
     transition: all 0.3s ease;
 
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+nav div{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+nav div a{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav div button{
+    background-color: #333;
+    color: white;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
 }

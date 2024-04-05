@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { Apollo } from 'apollo-angular';
 import { LOGIN } from '../graphql/graphql.user.queries';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth-service.service';
 
 @Component({
   selector: 'app-user-login',
@@ -16,7 +17,9 @@ export class UserLoginComponent {
   password:string = '';
   error:string = '';
 
-  constructor(private apollo: Apollo, private router: Router) {
+
+
+  constructor(private apollo: Apollo, private router: Router, private authService: AuthService) {
     console.log("--- User Login Component() ---");
   
   }
@@ -29,15 +32,17 @@ export class UserLoginComponent {
         usernameEmail: this.username_email,
         password: this.password,
       },
-    }).subscribe(
+    })
+    .subscribe(
       (response) => {
-        localStorage.setItem('isUserLoggedIn', 'true');
+        this.authService.login();
         this.router.navigate(['/employee-list']);
+        
       },
       (error) => {
         console.error('Error logging in user', error);
         this.error = "There was an error logging in. Please try again.";
-      }
+      }, 
     );
 
     

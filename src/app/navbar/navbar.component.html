@@ -1,0 +1,11 @@
+<nav>
+    <div >
+      <a *ngIf="isUserLoggedIn" [routerLink]="['employee-list']">Employee List</a>
+    </div>
+    <div>
+      <button *ngIf="isUserLoggedIn" (click)="logout()">Log Out</button>
+      <a  *ngIf="!isUserLoggedIn" [routerLink]="['login']">Login</a>
+      <a  *ngIf="!isUserLoggedIn" [routerLink]="['register']">Register</a>
+    </div>
+  </nav>
+  

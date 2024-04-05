@@ -7,11 +7,12 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmationDialogComponent } from '../confirmation-dialog/confirmation-dialog.component';
 import { Router } from '@angular/router';
+import { CapitalizePipePipe } from '../capitalize-pipe.pipe';
 
 @Component({
   selector: 'app-employee-list',
   standalone: true,
-  imports: [NgFor, MatDialogModule],
+  imports: [NgFor, MatDialogModule, CapitalizePipePipe],
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.css'
 })

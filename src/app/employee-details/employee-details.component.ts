@@ -3,11 +3,12 @@ import { Apollo } from 'apollo-angular';
 import { GET_EMPLOYEE } from '../graphql/graphql.emp.queries';
 import { ActivatedRoute } from '@angular/router';
 import { NgIf } from '@angular/common';
+import { CapitalizePipePipe } from '../capitalize-pipe.pipe';
 
 @Component({
   selector: 'app-employee-details',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, CapitalizePipePipe],
   templateUrl: './employee-details.component.html',
   styleUrl: './employee-details.component.css'
 })

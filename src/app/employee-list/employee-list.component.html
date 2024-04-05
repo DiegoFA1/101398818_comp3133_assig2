@@ -12,8 +12,8 @@
         <th>Employee Actions</th>
       </tr>
       <tr *ngFor="let employee of employees">
-        <td>{{employee.first_name}}</td>
-        <td>{{employee.last_name}}</td>
+        <td>{{employee.first_name | capitalizePipe}}</td>
+        <td>{{employee.last_name | capitalizePipe}}</td>
         <td>{{employee.email}}</td>
         <td>
           <button class="select-btn" (click)="viewEmployee(employee)">View</button>

@@ -6,11 +6,12 @@ import { GET_ALL_EMPLOYEES } from '../graphql/graphql.emp.queries';
 import { NgIf } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CapitalizePipePipe } from '../capitalize-pipe.pipe';
 
 @Component({
   selector: 'app-employee-add-update',
   standalone: true,
-  imports: [NgIf, FormsModule, ReactiveFormsModule],
+  imports: [NgIf, FormsModule, ReactiveFormsModule, CapitalizePipePipe],
   templateUrl: './employee-add-update.component.html',
   styleUrls: ['./employee-add-update.component.css']
 })
