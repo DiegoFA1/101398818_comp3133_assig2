@@ -24,6 +24,22 @@ export class UserRegisterComponent {
    }
 
   register() {
+
+    if (this.user_username == '') {
+      this.error = "Username is required.";
+      return;
+    }
+
+    if (this.user_password == '') {
+      this.error = "Password is required.";
+      return;
+    }
+
+    if (this.user_email == '') {
+      this.error = "Email is required.";
+      return;
+    }
+
     this.apollo.mutate({
       mutation: SIGNUP,
       variables: {
@@ -37,7 +53,7 @@ export class UserRegisterComponent {
         this.router.navigate(['/login']);
       },
       (error) => {
-        this.error = error;
+        this.error = "There was an error Signing Up. Please try again.";
       }
     );
     

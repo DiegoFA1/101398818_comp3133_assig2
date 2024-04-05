@@ -27,6 +27,17 @@ export class UserLoginComponent {
 
   login() {
     console.log("--- User Login() ---");
+
+    if (this.user_username_email == '') {
+      this.error = "Username or Email is required.";
+      return;
+    }
+
+    if (this.user_password == '') {
+      this.error = "Password is required.";
+      return;
+    }
+
     this.apollo.query({
       query: LOGIN,
       variables: {
