@@ -30,3 +30,9 @@
 
 # Use of Pipe for Capitalization
 [image](./screenshots/Pipe.png)
+
+# Mongo Employee
+[image](./screenshots/MongoEmp.png)
+
+# Mongo Users
+[image](./screenshots/MongoUsers.png)
