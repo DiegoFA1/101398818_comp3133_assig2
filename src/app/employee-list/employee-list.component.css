@@ -10,11 +10,18 @@ h1 {
     margin: 10px 0;
 }
 
-table {
+table{
     width: 100%;
     border-collapse: collapse;
+    
+}
+table, th, td { 
+    border: 2px solid #ddd;
 }
 
+table th, table td{
+    padding: 10px;
+}
 .content{
     width: 100%;
     
@@ -22,6 +29,7 @@ table {
 
 table th{
     text-align: left;
+    width: 25%;
 }
 
 .select-btn {

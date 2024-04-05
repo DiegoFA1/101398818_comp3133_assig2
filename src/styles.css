@@ -9,7 +9,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     flex-direction: column;
     align-items: center;
     width: 60%;
-    
 }
 
 
@@ -65,7 +64,8 @@ h1 {
 
 .userForm div input{
     height: 100%;
-    width: 100%;
+    width: 95%;
+    padding-left: 15px ;
     outline: none;
     border-radius: 25px;
     border: 1px solid silver;
@@ -135,4 +135,88 @@ nav div button{
     font-size: medium;
     border: none;
     cursor: pointer;
+}
+
+.empContent{
+    width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.empContent form{
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.empContent form div{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.empContent form div input{
+    padding-left: 15px ;
+    height: 100%;
+    width: 95%;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid silver;
+    transition: all;
+}
+
+.empContent form div select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid silver;
+    transition: all;
+    background: #fff;
+    padding: 15px;
+}
+
+.empContent form div label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    color: #999;
+    font-size: 17px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.empContent form div input:focus ~ label,
+.empContent form div input ~ label,
+.empContent form div select:focus ~ label,
+.empContent form div select ~ label{
+    top: 0%;
+    color: #4158d0;
+    font-size: 16px;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+
+
+.empContent button{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background: #4158d0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+
+.empContent form div button:hover{
+    background: rgba(9,9,121,1);
+    color: #fff;
 }

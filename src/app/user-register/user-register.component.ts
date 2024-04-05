@@ -5,6 +5,7 @@ import { SIGNUP } from '../graphql/graphql.user.queries';
 import { Router } from '@angular/router';
 import { NgIf } from '@angular/common';
 
+
 @Component({
   selector: 'app-user-register',
   standalone: true,
@@ -13,9 +14,9 @@ import { NgIf } from '@angular/common';
   styleUrl: './user-register.component.css'
 })
 export class UserRegisterComponent {
-  username: string='';
-  password: string='';
-  email: string='';
+  user_username: string='';
+  user_password: string='';
+  user_email: string='';
   error: string='';
 
   constructor(private apollo: Apollo, private router: Router) {
@@ -26,9 +27,9 @@ export class UserRegisterComponent {
     this.apollo.mutate({
       mutation: SIGNUP,
       variables: {
-        username: this.username,
-        password: this.password,
-        email: this.email
+        username: this.user_username,
+        password: this.user_password,
+        email: this.user_email
       }
     }).subscribe(
       (response) => {

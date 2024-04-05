@@ -53,7 +53,7 @@ export class EmployeeAddUpdateComponent {
     }).subscribe(
       (response) => {
         console.log('Employee added successfully', response);
-        this.router.navigate(['/employees']);
+        this.router.navigate(['/employee-list']);
       },
       (error) => {
         console.error('Error adding employee', error);
@@ -77,7 +77,7 @@ export class EmployeeAddUpdateComponent {
     }).subscribe(
       (response) => {
         console.log('Employee updated successfully', response);
-        this.router.navigate(['/employees']);
+        this.router.navigate(['/employee-list']);
 
       },
       (error) => {

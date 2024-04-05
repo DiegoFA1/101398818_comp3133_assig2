@@ -4,17 +4,18 @@ import { Apollo } from 'apollo-angular';
 import { LOGIN } from '../graphql/graphql.user.queries';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth-service.service';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-user-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, NgIf],
   templateUrl: './user-login.component.html',
   styleUrl: './user-login.component.css'
 })
 export class UserLoginComponent {
-  username_email:string = '';
-  password:string = '';
+  user_username_email:string = '';
+  user_password:string = '';
   error:string = '';
 
 
@@ -29,8 +30,8 @@ export class UserLoginComponent {
     this.apollo.query({
       query: LOGIN,
       variables: {
-        usernameEmail: this.username_email,
-        password: this.password,
+        usernameEmail: this.user_username_email,
+        password: this.user_password,
       },
     })
     .subscribe(

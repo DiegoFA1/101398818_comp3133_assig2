@@ -3,10 +3,9 @@
     <h1>{{ employee.id ? "Update" : "Add" }} Employee</h1>
   </header>
 
-  <div class="content">
+  <div class="empContent">
     <form (ngSubmit)="employee.id ? updateEmployee() : addEmployee()">
       <div>
-        <label for="firstName">First Name:</label>
         <input
           type="text"
           id="firstName"
@@ -14,9 +13,9 @@
           [(ngModel)]="employee.first_name"
           required
         />
+        <label for="firstName">First Name</label>
       </div>
       <div>
-        <label for="lastName">Last Name:</label>
         <input
           type="text"
           id="lastName"
@@ -24,21 +23,23 @@
           [(ngModel)]="employee.last_name"
           required
         />
+        <label for="lastName">Last Name</label>
       </div>
+
       <div>
-        <label for="gender">Gender:</label>
         <select
           id="gender"
           name="gender"
-          [(ngModel)]="employee.gender"
+          [(ngModel)]="employee.gender"       
           required
         >
           <option value="Female">Female</option>
           <option value="Male">Male</option>
         </select>
+        <label for="gender">Gender</label>
       </div>
+
       <div>
-        <label for="email">Email:</label>
         <input
           type="email"
           id="email"
@@ -46,9 +47,9 @@
           [(ngModel)]="employee.email"
           required
         />
+        <label for="email">Email</label>
       </div>
       <div>
-        <label for="salary">Salary:</label>
         <input
           type="number"
           id="salary"
@@ -56,13 +57,15 @@
           [(ngModel)]="employee.salary"
           required
         />
+        <label for="salary">Salary</label>
       </div>
+      
       <div>
         <button type="button" (click)="cancelOption()">
           Cancel
         </button>
         <button type="submit">
-          {{ employee.id ? "Update" : "Add" }} Employee
+          {{ employee.id ? "Update" : "Add" }}
         </button>
       </div>
     </form>
