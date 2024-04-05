@@ -1,1 +1,29 @@
-<p>user-login works!</p>
+<div class="userContent">
+  <div class="userTitle">
+    <h1>Login</h1>
+  </div>
+  <form class="userForm" (ngSubmit)="login()">
+    <div>
+      <input
+        id="username_email"
+        name="username_email"
+        [(ngModel)]="username_email"
+        required
+      />
+      <label for="username_email">Username or Email</label>
+    </div>
+    <div>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        [(ngModel)]="password"
+        required
+      />
+      <label for="password">Password</label>
+    </div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+  </form>
+</div>

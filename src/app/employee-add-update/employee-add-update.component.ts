@@ -31,7 +31,7 @@ export class EmployeeAddUpdateComponent {
 
   cancelOption() {
     console.log("--- GQL cancelOption() ---")
-    this.router.navigate(['/employees']);
+    window.history.back();
   }
 
 
